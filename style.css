@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1e1e1e;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#tela {
+    border: 3px solid #444;
+    background-color: #FFF;
+    cursor: crosshair;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.colorArea {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 10px;
+    padding: 10px;
+    background: #444;
+    border-radius: 10px;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.color:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.color.active {
+    border: 3px solid #FFF;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-button {
+    border: none;
+    background-color:#444 ;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.icon-button:hover {
+    background-color: #cc3b3b;
+    transform: scale(1.1);
+}
+
+.clear {
+    border: none;
+    background-color: #444;
+    color: #FFF;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.clear:hover {
+    background-color: #cc3b3b;
+    transform: scale(1.05);
+}

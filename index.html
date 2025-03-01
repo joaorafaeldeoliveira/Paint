@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhando no Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <canvas id="tela" width="1000" height="600"></canvas>
+        <div class="tools">
+            <div class="colorArea">
+                <div data-color="black" class="color active" style="background: black;"></div>
+                <div data-color="blue" class="color" style="background: blue;"></div>
+                <div data-color="red" class="color" style="background: red;"></div>
+                <div data-color="green" class="color" style="background: green;"></div>
+                <div data-color="yellow" class="color" style="background: yellow;"></div>
+                <div data-color="gray" class="color" style="background: gray;"></div>
+                <div data-color="pink" class="color" style="background: pink;"></div>
+                <div data-color="violet" class="color" style="background: violet;"></div>
+                <div data-color="orange" class="color" style="background: orange;"></div>
+            </div>
+            <div class="actions">
+                <button id="eraser" class="icon-button" title="Borracha">
+                    <i data-lucide="eraser"></i>
+                </button>
+                <button id="bucket" class="icon-button" title="Balde de Tinta">
+                    <i data-lucide="paint-bucket"></i>
+                </button>
+                <button class="clear">Limpar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
