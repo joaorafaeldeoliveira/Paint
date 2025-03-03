@@ -110,7 +110,7 @@ h1 {
 }
 
 .clear:hover {
-    background-color: #cc3b3b;
+    background-color:white  ;
     transform: scale(1.05);
 }
 @media (max-width: 768px) {
